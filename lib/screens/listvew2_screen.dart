@@ -8,8 +8,6 @@ class ListVew2Screen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('List View tipo 2'),
-        elevation: 0,
-        backgroundColor: Colors.indigo,
       ),
       body: ListView.separated(
         itemBuilder: (BuildContext context, int i) => ListTile(
