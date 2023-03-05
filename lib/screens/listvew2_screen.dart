@@ -6,12 +6,25 @@ class ListVew2Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('List View tipo 2')),
+      appBar: AppBar(
+        title: const Text('List View tipo 2'),
+        elevation: 0,
+        backgroundColor: Colors.indigo,
+      ),
       body: ListView.separated(
         itemBuilder: (BuildContext context, int i) => ListTile(
           title: Text(options[i]),
-          trailing: const Icon(Icons.arrow_forward),
-          leading: const Icon(Icons.access_time_rounded),
+          trailing: const Icon(
+            Icons.arrow_forward,
+            color: Colors.indigo,
+          ),
+          leading: const Icon(
+            Icons.access_time_rounded,
+            color: Colors.indigo,
+          ),
+          onTap: () {
+            print('HOLA $i');
+          },
         ),
         itemCount: options.length,
         separatorBuilder: (_, __) => const Divider(height: 1.0),
