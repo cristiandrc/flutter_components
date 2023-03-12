@@ -59,6 +59,12 @@ class AppRoutes {
       name: 'Slider && checks',
       screen: const SliderScreen(),
       icon: Icons.slow_motion_video_outlined,
+    ),
+    MenuOptions(
+      route: 'listviewbuilder',
+      name: 'InfiniteScroll & pull to refresh',
+      screen: const ListViewBuilderScreen(),
+      icon: Icons.build_circle_outlined,
     )
   ];
 
